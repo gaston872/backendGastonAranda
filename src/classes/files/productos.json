@@ -64,17 +64,31 @@
 		"id": "2d5b61cd-89ad-4c27-be4b-b1ade5ff5816"
 	},
 	{
+		"title": "Producto 4",
+		"description": "descripcion de producto4",
+		"code": "arg",
+		"price": 27,
+		"status": true,
+		"stock": 10,
+		"category": "categoria producto 4",
+		"thumbnails": [
+			"imagen.com/add",
+			"imagen.com/imagen4.jpg"
+		],
+		"id": 7
+	},
+	{
 		"title": "Producto 3",
 		"description": "descripcion de producto3",
 		"code": "arg",
-		"price": 25,
+		"price": 22,
 		"status": true,
-		"stock": 8,
+		"stock": 26,
 		"category": "categoria producto 3",
 		"thumbnails": [
-			"imagen.com/asdd",
-			"imagen.com/imagen3.png"
+			"imagen.com/add",
+			"imagen.com/imagen3.jpg"
 		],
-		"id": "c94cf25d-cc7a-4fea-a256-59bb24d74d30"
+		"id": "88ddede3-d7af-4b7c-93d6-7678255e7b9d"
 	}
 ]

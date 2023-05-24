@@ -8,7 +8,7 @@ export default class ProductManager {
 
     constructor(){
         this.#products = []
-        this.#path = './src/classes/files/productos.json'
+        this.#path = './classes/files/productos.json'
     }
 
     getProducts = async () => {
