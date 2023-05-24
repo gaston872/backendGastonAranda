@@ -1,7 +1,7 @@
 import fs from "fs";
 import { v4 as uuidV4 } from "uuid";
 
-const path = "./src/classes/files/carts.json";
+const path = "./classes/files/carts.json";
 
 export default class CartsManager {
   consultarCarts = async () => {
