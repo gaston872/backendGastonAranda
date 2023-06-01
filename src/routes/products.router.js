@@ -1,6 +1,8 @@
 import { Router } from "express";
 import ProductManager from "../classes/ProductManager.js";
 
+import socketServer, { pM } from "../server.js";
+
 const router = Router();
 
 const productManager = new ProductManager()
@@ -29,6 +31,7 @@ router.post("/", async (req, res) => {
   const product = req.body;
 
   productManager.crearProducto(product);
+  req.socketServer.emit('products', productManager.cargarProductos())
   res.send({ status: "success" });
 });
 
@@ -36,11 +39,13 @@ router.put('/:id', async (req, res) => {
   const id = req.params.id
   const info = req.body
   await productManager.actualizarProducto(id, info)
+  req.socketServer.emit('products', productManager.cargarProductos())
   res.send({ status: "succes" })
 })
 
 router.delete('/:id', async (req, res) => {
   await productManager.deleteProduct(req.params.id)
+  req.socketServer.emit('products', productManager.cargarProductos())
   res.send({ status: "success" });
 })
 
