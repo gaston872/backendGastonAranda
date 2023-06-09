@@ -22,6 +22,6 @@ function convertirAHTML(productos) {
 }
 
 socket.on('products', (products) => {
-    convertirAHTML(products)
+    //convertirAHTML(products)
     productos.innerHTML = convertirAHTML(products);
 })

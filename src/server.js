@@ -8,6 +8,8 @@ import handlebars from "express-handlebars";
 
 import ProductManager from './classes/ProductManager.js';
 
+const productManager = new ProductManager()
+
 export const pM = new ProductManager(__dirname + "/files/products.json");
 
 const app = express()
@@ -24,6 +26,14 @@ app.use('/api/products/', routerProducts);
 app.use('/api/carts/', routerCarts);
 
 app.use('/', viewsRouter);
+
+app.get('/', async (req, res) => {
+    let productos = await productManager.cargarProductos()
+    res.render('index', {
+        title: "productos",
+        products: productos
+    })
+})
 
 const expressServer = app.listen(8080, () => {
     console.log('Servidor levantado');

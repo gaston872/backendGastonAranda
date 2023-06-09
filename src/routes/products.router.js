@@ -1,7 +1,7 @@
 import { Router } from "express";
 import ProductManager from "../classes/ProductManager.js";
 
-import socketServer, { pM } from "../server.js";
+//import socketServer, { pM } from "../server.js";
 
 const router = Router();
 

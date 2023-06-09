@@ -11,11 +11,17 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/realtimeproducts', async (req, res) => {
+    const productos = await pM.cargarProductos();
+    socketServer.emit('initProduct', productos);
+    res.render('realTimeProducts', { title: "Productos" });
+  });
+
+/* router.get('/realtimeproducts', async (req, res) => {
     await pM.cargarProductos().then(() => {
         res.render('realTimeProducts', { title: "Productos" })
 
     });
-});
+}); */
 
 /* router.get('/', (req, res)=>{
     res.render('index');
