@@ -44,7 +44,7 @@ const productos = await pM.cargarProductos();
 
 socketServer.on("connection", (socket) => {
     console.log("New connection");
-    socket.emit('products', products);
+    socket.emit('products', productos);
 })
 
 app.use(function (req, res, next) {
