@@ -8,7 +8,7 @@ export default class ProductManager {
 
     constructor(){
         this.#products = []
-        this.#path = './classes/files/productos.json'
+        this.#path = './ProductManager/src/classes/files/productos.json'
     }
 
     getProducts = async () => {
@@ -131,7 +131,7 @@ const manager = new ProductManager()
 manager.addProduct('Producto 2', 'Descripcion 2', 20, 'thumbnail2.jpg', 'CODE2', 15);
 manager.addProduct('Producto 3', 'Descripcion 3', 15, 'thumbnail3.jpg', 'CODE3', 30);
 manager.addProduct('Producto 4', 'Descripcion 4', 25, 'thumbnail4.jpg', 'CODE4', 12);
-manager.addProduct('Producto 5', 'Descripcion 5', 27, 'thumbnail5.jpg', 'CODE5', 24); */
+manager.addProduct('Producto 5', 'Descripcion 5', 27, 'thumbnail5.jpg', 'CODE5', 24);*/ 
 //manager.getProductByLimit(1);
 //manager.getProducts()
 

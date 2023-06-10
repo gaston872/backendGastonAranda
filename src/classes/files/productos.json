@@ -1,0 +1,29 @@
+[
+	{
+		"title": "Producto 5",
+		"description": "Descripcion 5",
+		"price": 27,
+		"thumbnail": "thumbnail5.jpg",
+		"code": "CODE5",
+		"stock": 24,
+		"id": "c603b4aa-f525-4f27-8ce5-7a9eff93c9f7"
+	},
+	{
+		"title": "Producto 1",
+		"description": "Descripcion 1",
+		"price": 24,
+		"thumbnail": "thumbnail1.jpg",
+		"code": "CODE1",
+		"stock": 12,
+		"id": "10409451-8583-4b69-a1ef-85a26c522d94"
+	},
+	{
+		"title": "Producto 2",
+		"description": "Descripcion 2",
+		"price": 18,
+		"thumbnail": "thumbnail2.jpg",
+		"code": "CODE2",
+		"stock": 8,
+		"id": "f9880b69-c447-46a4-8f9d-cc87c73190c9"
+	}
+]
