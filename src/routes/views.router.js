@@ -1,5 +1,5 @@
 import {Router} from 'express';
-
+//import ProductManager from '../DAOs/ProductManagerMongo.class.js';
 import socketServer, { pM } from "../server.js";
 
 const router = Router();
@@ -15,6 +15,10 @@ router.get('/realtimeproducts', async (req, res) => {
     socketServer.emit('initProduct', productos);
     res.render('realTimeProducts', { title: "Productos" });
   });
+
+  router.get('/chat', async (req, res) => {
+    res.render('chat')
+  })
 
 /* router.get('/realtimeproducts', async (req, res) => {
     await pM.cargarProductos().then(() => {

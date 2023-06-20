@@ -25,5 +25,23 @@
 		"code": "CODE2",
 		"stock": 8,
 		"id": "f9880b69-c447-46a4-8f9d-cc87c73190c9"
+	},
+	{
+		"title": "Producto 3",
+		"description": "Descripcion 3",
+		"price": 19,
+		"thumbnail": "thumbnail3.jpg",
+		"code": "CODE3",
+		"stock": 5,
+		"id": "4bb7b4e3-6899-4b60-a5f4-7013b75560ef"
+	},
+	{
+		"title": "Producto 4",
+		"description": "Descripcion 4",
+		"price": 17,
+		"thumbnail": "thumbnail4.jpg",
+		"code": "CODE4",
+		"stock": 7,
+		"id": "efdf1851-c768-49e7-a956-8e818a73cacd"
 	}
 ]
